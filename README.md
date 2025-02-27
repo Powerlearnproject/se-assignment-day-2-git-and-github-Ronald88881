@@ -392,7 +392,7 @@ How Commits Help Track Changes
 Time Travel: Revert to an older commit if you break something.
 Example:
 git log  # View commit history  
-git checkout abc123  # Restore code from commit `abc123`  
+git checkout abc123  # Restore code from commit 
 
 Accountability: See who changed what and why.
 
@@ -555,7 +555,7 @@ Example: You fork userA/awesome-project to create your-username/awesome-project.
 Cloning:
 
 Downloads a copy of the project to your local computer (your laptop).
-You’re just working offline—it doesn’t create a new standalone project on GitHub.
+You’re just working offline. It doesn’t create a new standalone project on GitHub.
 Example: git clone https://github.com/userA/awesome-project.git → code lives on your machine.
 
 Similarity:
@@ -699,7 +699,7 @@ Create an Issue:
 Click Issues → New Issue. Add a title, description, labels, and assignees.
 Example:
 Title: [Bug] Login page crashes on Safari  
-Labels: `bug`, `frontend`  
+Labels: Bugs, etc  
 Assignee: @web-dev-team  
 
 Set Up a Project Board:
@@ -717,11 +717,9 @@ Common challenges
 Merge conflicts 
 What happens:Two people edit the same file, and Git doesn`t know which version to keep.
 Example: Me and a teammate both update config.json but in different ways. When you try to merge, Git throws a tantrum. 
-<<<<<<< Head =====
+<<<<Head ==
 "theme": "dark"
->>>>>> main
-Resolving conflicts feels like defusing a bomb. Newbies might panic and delete code accidentally.
-
+>>>main
 Direct Commits to main
 What Happens: You edit the main directly instead of using a branch. Now the whole project crashes.
 Example: You quickly fix a typo in index.html on main, but accidentally delete a critical script tag.
