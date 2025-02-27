@@ -347,8 +347,7 @@ Create a file (e.g., index.html) and write some code.
 Example:
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>My To-Do List</h1>
+  <body> 
   </body>  
 </html>  
 
@@ -428,10 +427,7 @@ GitHub checks for conflicts (e.g., if someone else edited the same code).
 
 Resolve conflicts (if any):
 if two people change the same line of code, Git will flag it. You`ll manually pick which version to keep: 
-<<<<<<< Head
-Your code =====
-Their code
->>>>>> main
+Head Your code ==Their code to the, main
 Delete the conflict markers (<<<, ===, >>>) and keep the correct code, then commit again.
 
 Merge the PR: Once approved, click “Merge” on GitHub. Your changes are now part of main!
@@ -717,9 +713,7 @@ Common challenges
 Merge conflicts 
 What happens:Two people edit the same file, and Git doesn`t know which version to keep.
 Example: Me and a teammate both update config.json but in different ways. When you try to merge, Git throws a tantrum. 
-<<<<Head ==
-"theme": "dark"
->>>main
+Head "theme": "dark" to the main
 Direct Commits to main
 What Happens: You edit the main directly instead of using a branch. Now the whole project crashes.
 Example: You quickly fix a typo in index.html on main, but accidentally delete a critical script tag.
