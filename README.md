@@ -169,7 +169,7 @@ Help users jump to sections like “Installation” or “Troubleshooting.”
 Installation Instructions
 Step-by-step commands to set up the project.
 Example:
-## Installation
+Installation
 1. Clone the repo: `git clone https://github.com/yourname/WeatherBot.git`  
 2. Install dependencies: `npm install`  
 3. Add your API key to `.env`  
@@ -177,14 +177,14 @@ Example:
 Usage Guide
 How to run/use the project. Include code snippets or screenshots.
 Example:
-## Usage  
+Usage  
 Start the bot: `npm start`  
 Command: `!weather Nairobi` → Bot replies with Toronto’s forecast.  
 
 Contributing Guidelines
 Rules for others who want to help (e.g., how to report bugs, code style).
 Example:
-## Contributing  
+Contributing  
 - Fork the repo and create a feature branch.  
 - Follow the (Code Style Guide)(STYLE_GUIDE.md).  
 
@@ -217,24 +217,24 @@ Everyone follows the same setup, avoiding “But it works on my machine!” conf
 
 Real-World Example: A Calculator App README
 
-# CalculatorApp  
+CalculatorApp  
 *A simple calculator built with React. *  
 !(Calculator Screenshot)(screenshot.png)  
 
-## Installation  
+Installation  
 1. Clone this repo.  
 2. Run `npm install` to install dependencies.  
 3. Start the app: `npm start`.  
 
-## Usage  
+Usage  
 - Click buttons to perform calculations.  
 - Press `C` to clear.  
 
-## Contributing  
+Contributing  
 - Open an issue to discuss changes first.  
 - Write tests for new features.  
 
-## License  
+License  
 MIT License.  
 
 Need help? Email me@example.com!  
@@ -337,7 +337,7 @@ Tell Git who you are (so commits are tagged with your name):
 git config --global user.name "Ronald88881"  
 git config --global user.email "kinyeronald@email.com"  
 
-2. Create a Project Folder
+3. Create a Project Folder
 
 Make a folder for your project:
 mkdir todo-list  
@@ -345,10 +345,10 @@ cd todo-list
 
 Create a file (e.g., index.html) and write some code.
 Example:
-<!DOCTYPE html>  
-<html>  
-  <body>  
-    <h1>My To-Do List</h1>  
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>My To-Do List</h1>
   </body>  
 </html>  
 
@@ -427,13 +427,11 @@ Teammates can comment, suggest tweaks, or approve.
 GitHub checks for conflicts (e.g., if someone else edited the same code).
 
 Resolve conflicts (if any):
-If two people change the same line of code, Git will flag it. You’ll manually pick which version to keep:
-<<<<<<< HEAD  
-Your code  
-=======  
-Their code  
->>>>>>> main
-
+if two people change the same line of code, Git will flag it. You`ll manually pick which version to keep: 
+<<<<<<< Head
+Your code =====
+Their code
+>>>>>> main
 Delete the conflict markers (<<<, ===, >>>) and keep the correct code, then commit again.
 
 Merge the PR: Once approved, click “Merge” on GitHub. Your changes are now part of main!
@@ -716,15 +714,12 @@ GitHub will auto-close the issue when the PR merges!
 ## Reflect on common challenges and best practices associated with using GitHub for version control. What are some common pitfalls new users might encounter, and what strategies can be employed to overcome them and ensure smooth collaboration?
 
 Common challenges 
-Merge Conflicts
-What Happens: Two people edit the same file, and Git doesn’t know which version to keep.
-Example: You and your teammate both update config.json but in different ways. When you try to merge, Git throws a tantrum.
-<<<<<<< HEAD  
-"theme": "dark"  
-=======  
-"theme": "light"  
->>>>>>> main  
-
+Merge conflicts 
+What happens:Two people edit the same file, and Git doesn`t know which version to keep.
+Example: Me and a teammate both update config.json but in different ways. When you try to merge, Git throws a tantrum. 
+<<<<<<< Head =====
+"theme": "dark"
+>>>>>> main
 Resolving conflicts feels like defusing a bomb. Newbies might panic and delete code accidentally.
 
 Direct Commits to main
@@ -768,7 +763,7 @@ docs: update README installation guide
 
 Use .gitignore to block junk files
 Create a .gitignore file to auto-exclude files like node_modules/, .env, or logs.
-# .gitignore example  
+.gitignore example  
 node_modules/  
 .DS_Store  
 *.log  
